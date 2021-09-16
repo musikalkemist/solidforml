@@ -49,19 +49,19 @@ class Extractor(ABC):
         pass
 
 
-class SpectrogramExtractor:
+class SpectrogramExtractor(Extractor):
 
     def extract(self, data):
         print("Extracted spectrogram")
 
 
-class MFCCExtractor:
+class MFCCExtractor(Extractor):
 
     def extract(self, data):
         print("Extracted MFCC")
 
 
-class MelSpectrogramExtractor:
+class MelSpectrogramExtractor(Extractor):
 
     def extract(self, data):
         print("Extracted mel spectrogram")
